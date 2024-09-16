@@ -5,7 +5,6 @@ public static void main(String[] args) {
     final int x = 7;
     int y = 8;
     y = 9;
-    // x = 5; x is a constant (final) - you cannot change it
-
+    // x = 5; x is a constant (final) - you cannot change it.
 }
 }
