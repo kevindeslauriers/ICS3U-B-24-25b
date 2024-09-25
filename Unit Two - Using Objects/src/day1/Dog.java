@@ -9,15 +9,12 @@ public class Dog {
     private boolean isVaccinated;
 
     // Constructor
-    public Dog(String name, int age, String breed, double weight, String color, String ownerName) {
+    public Dog(String name, int age, String breed, double weight) {
         this.name = name;
         this.age = age;
         this.breed = breed;
         this.weight = weight;
-        this.color = color;
-        this.ownerName = ownerName;
         this.isVaccinated = false; // default value
-        this.isNeutered = false; // default value
     }
 
     // Methods
