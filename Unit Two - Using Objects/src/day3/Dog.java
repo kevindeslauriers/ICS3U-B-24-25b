@@ -3,7 +3,7 @@ public class Dog {
     private String name;
     private int age;
 
-    public Dog(String name, String breed, int age) {
+    public Dog(String name, int age) {
         this.name = name;
         this.age = age;
     }
@@ -55,6 +55,5 @@ public class Dog {
         return name;
     }
 }
-
 
 
