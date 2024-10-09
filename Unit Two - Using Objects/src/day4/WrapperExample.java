@@ -13,6 +13,6 @@ public class WrapperExample {
         System.out.println(Integer.MAX_VALUE);  // includes 0 as a positive #
         System.out.println(Integer.MIN_VALUE);
 
-
+        long num = 7;
     }
 }
