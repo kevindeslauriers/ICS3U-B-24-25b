@@ -18,6 +18,8 @@ public class StringExamples {
 
         System.out.println(str1.equals(str2));      // true - same sequence of characters
 
+        System.out.println("Hello".equals(str2));
+
         System.out.println("Hello".compareTo("Hello"));         // 0
         System.out.println("Dev".compareTo("Ian"));             // -5
         System.out.println("Louisa".compareTo("Ian"));          // 3
@@ -25,6 +27,6 @@ public class StringExamples {
         System.out.println("Stefano".compareTo("Simon"));       // 11
         System.out.println("Dog".compareTo("dog"));             // -32
 
-        System.out.println("abcdzz".compareTo("abcdz"));
+        System.out.println("abcdzghghjghgjghh".compareTo("abcdz"));
     }
 }
