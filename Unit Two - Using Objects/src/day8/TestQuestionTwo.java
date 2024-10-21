@@ -3,10 +3,10 @@ package day8;
 public class TestQuestionTwo {
     public static void main(String[] args) {
               // Generate a random valid index for "Alphabet Soup"
-              int randomIndex = (int)(Math.random() * "Alphabet Soup".length());
+              int randomIndex = (int)(Math.random() * "Computer Science Rocks".length());
         
               // Construct a Mystery object called fun
-              Mystery fun = new Mystery("Alphabet Soup", randomIndex);
+              Mystery fun = new Mystery("Computer Science Rocks", randomIndex);
               
               // Print the initial string and index of fun
               System.out.println("Initial String: " + fun.getStr());
@@ -35,6 +35,10 @@ public class TestQuestionTwo {
               System.out.println("Modified String: " + fun.getStr());
     }
 }
+
+
+
+
 
 
 
