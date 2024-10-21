@@ -17,4 +17,21 @@ public class Member {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'getBooksBorrowed'");
     }
+
+    // this is for quetsion 2
+
+    public WorkoutPlan getWorkoutPlan() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getWorkoutPlan'");
+    }
+
+    public void cancelWorkoutPlan() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'cancelWorkoutPlan'");
+    }
+
+    public void changeWorkoutPlan(WorkoutPlan yogaFlexibility) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'changeWorkoutPlan'");
+    }
 }
