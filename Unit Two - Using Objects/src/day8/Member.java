@@ -1,7 +1,25 @@
 package day8;
 
 public class Member {
-    public Member(String str, int num){}
+
+    public Member(String string, int i) {
+        //TODO Auto-generated constructor stub
+    }
+
+    public WorkoutPlan getWorkoutPlan() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getWorkoutPlan'");
+    }
+
+    public void cancelWorkoutPlan() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'cancelWorkoutPlan'");
+    }
+
+    public void changeWorkoutPlan(WorkoutPlan yogaFlexability) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'changeWorkoutPlan'");
+    }
 
     public void borrowBook(Book bookOne) {
         // TODO Auto-generated method stub
@@ -18,20 +36,4 @@ public class Member {
         throw new UnsupportedOperationException("Unimplemented method 'getBooksBorrowed'");
     }
 
-    // this is for quetsion 2
-
-    public WorkoutPlan getWorkoutPlan() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getWorkoutPlan'");
-    }
-
-    public void cancelWorkoutPlan() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'cancelWorkoutPlan'");
-    }
-
-    public void changeWorkoutPlan(WorkoutPlan yogaFlexibility) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'changeWorkoutPlan'");
-    }
 }
