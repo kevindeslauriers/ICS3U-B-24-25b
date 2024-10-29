@@ -2,47 +2,39 @@ package day1;
 
 public class BooleanExpressions {
     public static void main(String[] args) {
-        boolean hasRedShoes = true; // boolean types can hold true or false
+        boolean hasRedShoes = true;
 
-        System.out.println(hasRedShoes == false);   
-        // hasRedShoes == false is a boolean expression because it 
-        // evaluates to true or false (a boolean)
+        System.out.println(hasRedShoes == true); // prints true because T == T is True
+        System.out.println(hasRedShoes == false); // prints false because T == F is False
 
-        int age = 23;
+        // = is assignment operator
+        // == is equality operator
 
-        System.out.println(age >= 18);      
-        // age >= 18 evaluates to true  - it is also a boolean expression
+        int numStudents = 9;
+
+        boolean largeClass = numStudents > 24; // numStudents > 24 is false
+        System.out.println("Large Class? " + largeClass); // prints false
 
         /*
+         * == equals
+         * > greater than
+         * >= greater than or equal
+         * < less than
+         * <= less than or equal
+         * != not equal
+         * ! not
          * 
-         * >=       greater or equal
-         * <=       less or equal
-         * ==       equal
-         * >        greater
-         * <        less
-         * !=       not equal
-         * !        not  ex. !true => false
-        */
+         */
 
+        int x = 27;
 
-        boolean x = age != 18; 
-        // x is true
+        boolean a = x > 10; // a will be true
+        boolean b = x <= 10; // b will be false
 
-        boolean y = !(7>9);
-        // y is true => !(false) = true
+        boolean c = a == !b; // boolean expression is a == !b
+                             // c will be T => T == !F => T == T
 
-        boolean z = !!hasRedShoes;
-        
-        int a = 7;
-        int b = 3;
-        boolean test1 = a > 6;
-        boolean test2 = b <= 2;
-         
-        boolean mystery = !test1 == test2;
-
-
-
-
+        boolean d = !(x <= 10); // !(27 <=10) => !F => T
 
     }
 }

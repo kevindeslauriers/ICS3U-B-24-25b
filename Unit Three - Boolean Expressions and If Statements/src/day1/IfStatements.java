@@ -2,37 +2,36 @@ package day1;
 
 public class IfStatements {
     public static void main(String[] args) {
-        boolean hasRedShoes = false;
+        boolean hasRedShoes = true;
 
-        if (hasRedShoes) {
-            System.out.println("Yuo have nice red shoes.");
-        }
-
-        if (!hasRedShoes) {
-            System.out.println("You should buy some red shoes.");
-        }
-
-        // this works but I like above better
-        // if (hasRedShoes == false){
-        // System.out.println("You should buy some red shoes.");
+        // if (hasRedShoes == true){
+        // System.out.println("I like your red shoes");
         // }
 
-        int x = 73;
+        if (hasRedShoes) {
+            System.out.println("I like your red shoes");
+        }
 
-        if (x % 2 == 0)
-            System.out.println("Even");
+        // if (hasRedShoes == false) {
+        // System.out.println("You should buy red shoes. Dorothy did.");
+        // }
 
-        if (x % 2 != 0)
-            System.out.println("Odd");
+        if (!hasRedShoes) {
+            System.out.println("You should buy red shoes. Dorothy did.");
+        }
 
-        if (x > 10) {
-            System.out.println("Hello");
-            System.out.println("Hi");
-        } // if x > 10 it does 2 things
+        int numStudents = 9;
+        final int BIG_CLASS = 24;
 
-        if (x > 100)
-            System.out.println("Hello...");
-        System.out.println("Hi...");
+        if (numStudents >= BIG_CLASS)
+            System.out.println("This is a big class. Time to get someone to drop the course.");
+
+        if (numStudents == 3) {
+            System.out.println("This is a small class");
+            System.out.println("It is really small");
+        }
+
+        // if only 1 line in the if statement you do not need { }
 
     }
 
