@@ -6,8 +6,13 @@ public class MoreAdvancedExample {
         boolean hasRedShoes = true;
         int x = 5;
 
-        boolean result = (x > 6) && !hasRedShoes || (age <= 18);
+        boolean result = (x > 6) || !hasRedShoes && (age <= 18);
 
+        // false || false && true       false && true => false
+        // false || false
+        // false
+
+        result = (x > 6) && !hasRedShoes || (age <= 18);
         // false && false || true
         // false || true
         // true
