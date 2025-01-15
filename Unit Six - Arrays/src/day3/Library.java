@@ -22,14 +22,37 @@ public class Library {
         }
     }
 
-    // Stub for displayBooks method (no body)
     public void displayBooks() {
-        // Method body will be created later
+        // for (Book book : books) {
+        // if (book != null)
+        // System.out.println(book);
+        // }
+
+        for (int i = 0; i < numBooks; i++) {
+            System.out.println(books[i]);
+        }
     }
 
-    // Stub for borrowBook method (no body)
-    public void borrowBook(String title) {
-        // Method body will be created later
+    public void displayAvailableBooks() {
+        // for (Book book : books) {
+        // if (book != null && !book.isBorrowed())
+        // System.out.println(book);
+        // }
+
+        for (int i = 0; i < numBooks; i++) {
+            if (!books[i].isBorrowed())
+                System.out.println(books[i]);
+        }
+    }
+
+    public Book borrowBook(String title) {
+        for (int i = 0; i < numBooks; i++) {
+            if (books[i].getTitle().equals(title) && !books[i].isBorrowed()) {
+                books[i].setBorrowed(true);
+                return books[i];
+            } 
+        }
+        System.out.println("Unable to borrow book.");
+        return null;
     }
 }
-

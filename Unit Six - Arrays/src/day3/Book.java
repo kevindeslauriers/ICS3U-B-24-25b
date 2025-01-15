@@ -40,7 +40,6 @@ public class Book {
     }
 
     // toString method to provide a string representation of the Book object
-    @Override
     public String toString() {
         return "Book Title: " + title + "\n" +
                 "Author: " + author + "\n" +
