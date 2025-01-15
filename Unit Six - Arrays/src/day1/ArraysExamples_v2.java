@@ -17,6 +17,10 @@ public class ArraysExamples_v2 {
             System.out.println(str);
         }
 
+        for (int i = 0; i < strings.length; i++) {
+            System.out.println(strings[i]);
+        }
+
         int[] nums = {3,1,7};
 
         // does not change the array

@@ -4,31 +4,74 @@ public class ArrayExamples {
     public static void main(String[] args) {
         // exampleOne();
         // exampleTwo();
-        exampleThree();
+        // exampleThree();
+        exampleFour();
+
+    }
+
+    private static void exampleFour() {
+        Box[] boxes = new Box[3];
+
+        for (Box box : boxes) {
+            System.out.println(box);
+        }
+
+        for (int i = 0; i < boxes.length; i++) {
+            boxes[i] = new Box(5, 4);
+        }
+
+        for (Box box : boxes) {
+           System.out.println(box); 
+        }
+
+        for (int i = 0; i < boxes.length; i++) {
+            boxes[i].setWidth(6);
+        }
+
+        for (Box box : boxes) {
+            System.out.println(box); 
+        }
+
+        for (Box box : boxes) {
+            box.setLength(2); 
+        }
+
+        for (Box box : boxes) {
+            System.out.println(box); 
+        }
+
+        for (Box box : boxes) {
+            box = new Box(5,1);
+        }
+
+        for (Box box : boxes) {
+            System.out.println(box); 
+        }
+
     }
 
     private static void exampleThree() {
         int[] nums = new int[10];
 
-        // for (int el : nums) {
-        //     System.out.println(el);
-        // }
+        for (int el : nums) {
+            System.out.println(el);
+        }
 
-        // no change because el is a copy of the next element makes a copy of the primitive)
+        // no change because el is a copy of the next element makes a copy of the
+        // primitive)
         // for (int el : nums) {
-        //     el = (int)(Math.random() * 100) + 5;    // 5 - 104
+        // el = (int)(Math.random() * 100) + 5; // 5 - 104
         // }
-
 
         for (int i = 0; i < nums.length; i++) {
-            nums[i] = (int)(Math.random() * 100) + 5;    // 5 - 104
+            nums[i] = (int) (Math.random() * 100) + 5; // 5 - 104
         }
 
         for (int el : nums) {
             System.out.println(el);
         }
 
-        // if you are modifying whatyou are iterating through or need the index 
+        // if you are modifying whatyou are iterating through or need the index
         // use a for loop
     }
 
