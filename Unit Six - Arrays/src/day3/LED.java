@@ -48,16 +48,16 @@ public class LED {
     public void displayColour() {
         if (isOn) {
             if (colour.equalsIgnoreCase("RED")) {
-                System.out.println("R");
+                System.out.print("R");
             } else if (colour.equalsIgnoreCase("GREEN")) {
-                System.out.println("G");
+                System.out.print("G");
             } else if (colour.equalsIgnoreCase("BLUE")) {
-                System.out.println("B");
+                System.out.print("B");
             } else if (colour.equalsIgnoreCase("YELLOW")) {
-                System.out.println("Y");
+                System.out.print("Y");
             }
         } else {
-            System.out.println(" "); // Blank (space) if the light is off
+            System.out.print(" "); // Blank (space) if the light is off
         }
     }
 
