@@ -44,6 +44,8 @@ public class LEDStrip {
 
     public void setPattern(String pattern) {
         this.pattern = pattern;
+        int maxIndex = LED.AVAILABLE_COLOURS.length;
+        int currentIndex = 0;
         for (int i = 0; i < leds.length; i++) {
             if (pattern.equals("red")) {
                 leds[i] = new LED("RED");
@@ -57,11 +59,9 @@ public class LEDStrip {
                 String randomColour = LED.AVAILABLE_COLOURS[(int) (Math.random() * LED.AVAILABLE_COLOURS.length)];
                 leds[i] = new LED(randomColour);
             } else {
-                int maxIndex = LED.AVAILABLE_COLOURS.length;
-                int currentIndex = 0;
                 leds[i] = new LED(LED.AVAILABLE_COLOURS[currentIndex]);
                 currentIndex++;
-                if (currentIndex > maxIndex)
+                if (currentIndex == maxIndex)
                     currentIndex = 0;
             }
         }
