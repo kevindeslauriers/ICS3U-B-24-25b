@@ -13,11 +13,35 @@ public class Arrays2DExample {
 
         print1DArray(sumRows);
 
+        System.out.println();
+        int[] sumCols = colSum(nums);
+        System.out.println();
+        print1DArray(sumCols);
+
+    }
+
+    private static int[] colSum(int[][] nums) {
+        int[] arr = new int[nums[0].length];
+
+        for (int col = 0; col < arr.length; col++) {
+            arr[col] = addCol(nums, col);
+        }
+
+        return arr;
+    }
+
+    private static int addCol(int[][] nums, int col) {
+        int sum = 0;
+        for (int row = 0; row < nums.length; row++) {
+            sum += nums[row][col];
+        }
+
+        return sum;
     }
 
     private static void print1DArray(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
-            System.out.println(arr[i] + " ");
+            System.out.print(arr[i] + " ");
         }
     }
 
