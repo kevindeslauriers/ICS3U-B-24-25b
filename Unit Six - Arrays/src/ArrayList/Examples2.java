@@ -27,12 +27,12 @@ public class Examples2 {
             System.out.println(name);
         }
 
-        // names.add(12, "Eric"); // index out of bounds index must be between 0 and size()
+       // names.add(12, "Eric"); // index out of bounds index must be between 0 and size()
         
 
         String removed = names.remove(2);
         System.out.println();
-        System.out.println(removed);
+        System.out.println(removed); // Henry
         System.out.println();
         for (String name : names) {
             System.out.println(name);

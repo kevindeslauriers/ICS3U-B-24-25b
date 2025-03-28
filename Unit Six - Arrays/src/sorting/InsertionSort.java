@@ -17,17 +17,16 @@ public class InsertionSort {
         System.out.println();
     }
 
-    private static void sort(int[] arr) {
-        for (int i = 1; i < arr.length; i++) {
-            int temp = arr[i];
-            int j = i;
-            while(j>0 && arr[j-1]>temp){
-                arr[j] = arr[j-1];
-                j--;
+    public static void sort(int[] arr){
+        for(int i = 0; i < arr.length - 1; i++){
+            int min = i;
+            for( int j = i+1; j < arr.length; i ++){
+                if(arr[j]<arr[min])
+                    min = j;
             }
-
-            arr[j] = temp;
-
+            int temp = arr[i];
+            arr[i] = arr[min];
+            arr[min] = temp;
         }
     }
 }

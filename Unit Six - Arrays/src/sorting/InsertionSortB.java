@@ -10,19 +10,16 @@ public class InsertionSortB {
 
     }
 
-    private static void sort(int[] arr) {
-        for (int i = 1; i < arr.length; i++) {
-            int temp = arr[i];
-            int j = i;
-
-            while(j > 0 && temp < arr[j-1]){
-               arr[j] = arr[j-1];
-               j--; 
-            }
-
-            arr[j] = temp;
+    private static void Insertion(int[] array){
+    	int temp = array[i];
+        int j = i;
+        
+        while (j>0 && array[j-1]>temp){
+        	array[j] = array[j-1];
+            j--
+          } 
+            array[j] = temp;
         }
-    }
 
     private static void printArr(int[] arr) {
         for (int i : arr) {
