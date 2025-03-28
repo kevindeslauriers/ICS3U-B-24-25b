@@ -8,8 +8,25 @@ public class RecursiveAlgorithms {
             arr[i] = i;
         }
 
-        
-        System.out.println(binarySearch(arr, 23));
+        int minIndex = 0;
+        int maxIndex = arr.length - 1;
+        System.out.println(binarySearch(arr, 23, minIndex, maxIndex));
+    }
+
+    private static int binarySearch(int[] arr, int findMe, int minIndex, int maxIndex) {
+
+        if (minIndex > maxIndex)
+            return -1;
+
+        int midIndex = (minIndex + maxIndex) / 2;
+
+        if (arr[midIndex] == findMe)
+            return midIndex;
+        else if (arr[midIndex] > findMe)
+            return binarySearch(arr, findMe, minIndex, midIndex - 1);
+        else
+            return binarySearch(arr, findMe, midIndex + 1, maxIndex);
+
     }
 
     private static int binarySearch(int[] arr, int findMe) {
@@ -30,5 +47,4 @@ public class RecursiveAlgorithms {
         return -1;
     }
 
-    
 }
