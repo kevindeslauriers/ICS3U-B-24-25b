@@ -12,7 +12,12 @@ public class MergeArrays {
         }
     }
 
-    private static int[] mergeSortedArrays(int[] a, int[] b) {
-
+    private static int[] mergeSortedArrays(int[] arr1, int[] arr2) {
+        int[] merged = new int[arr1.length + arr2.length];
+        // i is index for arr1
+        // j is index for arr2
+        // k is index for new merged array
+        
+        int i = 0, j = 0, k = 0;
     }
 }
