@@ -1,7 +1,7 @@
 package day1a;
 
 public class Animal {
-    protected String name;
+    private String name;
 
     public Animal(String name) {
         this.name = name;
@@ -10,6 +10,10 @@ public class Animal {
 
     public void eat() {
         System.out.println(name + " is eating.");
+    }
+
+    public String getName(){
+        return this.name;
     }
 }
 

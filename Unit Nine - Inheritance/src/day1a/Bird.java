@@ -12,9 +12,9 @@ public class Bird extends Animal {
 
     public void fly() {
         if (canFly) {
-            System.out.println(name + " is flying.");
+            System.out.println(getName() + " is flying.");
         } else {
-            System.out.println(name + " can't fly.");
+            System.out.println(getName() + " can't fly.");
         }
     }
 }
