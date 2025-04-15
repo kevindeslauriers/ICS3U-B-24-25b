@@ -1,9 +1,10 @@
 package day2;
 
 public class Vehicle {
-    protected String type;
+    private String type;
 
     public Vehicle(String type) {
+        super();
         this.type = type;
         System.out.println("Vehicle constructor called");
     }
@@ -15,5 +16,7 @@ public class Vehicle {
     public void describe() {
         System.out.println("This is a " + type);
     }
+
+   
 }
 

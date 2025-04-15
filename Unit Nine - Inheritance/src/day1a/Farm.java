@@ -7,7 +7,7 @@ public class Farm {
         Dog dog = new Dog("Abraham", "Golden Retriever");
         Bird bird = new Bird("Alex", true);
         Animal animal2 = new Dog("Steve", "Poodle");
-
+        // generic holds specific
         animal.eat();
         mammal.eat();
         mammal.walk();
