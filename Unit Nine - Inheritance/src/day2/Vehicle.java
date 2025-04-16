@@ -4,7 +4,6 @@ public class Vehicle {
     private String type;
 
     public Vehicle(String type) {
-        super();
         this.type = type;
         System.out.println("Vehicle constructor called");
     }
@@ -15,6 +14,22 @@ public class Vehicle {
 
     public void describe() {
         System.out.println("This is a " + type);
+    }
+
+    public String toString(){
+        return type;
+    }
+
+    public boolean equals(Object obj){
+        if (this == obj)
+            return true;
+
+        if (!(obj instanceof Vehicle))
+            return false;
+        
+        Vehicle cObj = (Vehicle)obj;
+
+        return cObj.type.equals(this.type);
     }
 
    

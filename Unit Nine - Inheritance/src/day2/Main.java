@@ -14,23 +14,23 @@ public class Main {
 
         // System.out.println(car1 == car2);
         // System.out.println(car1 == car3);
-        System.err.println(car1.equals(car2));
-        System.err.println(car1.equals(car3));
+        //System.err.println(car1.equals(car2));
+       // System.err.println(car1.equals(car3));
 
-        System.out.println("Hi".equals("Hi"));
+        //System.out.println("Hi".equals("Hi"));
 
         car2 = car1;
         // System.out.println(car1 == car2);
-        System.err.println(car1.equals(car2));
+        //System.err.println(car1.equals(car2));
 
 
 
 
-        Coffee myCup = new Coffee();
+        //Coffee venti = new Drink(); // not all drinks are coffee
+        Drink myCup = new Coffee(); // all coffees are drinks
+        venti.setSize("large");
 
-        //myCup.setSize("large");
-
-        System.out.println(car1);
+        //System.out.println(car1);
     }
 }
 
