@@ -5,6 +5,7 @@ public class Person extends Object{
     private String name;
     
     public Person(int age, String name) {
+        super();
         this.age = age;
         this.name = name;
     }
@@ -35,6 +36,10 @@ public class Person extends Object{
 
         return false;
     }
+
+    // public String toString(){
+    //     return "Hello";
+    // }
 
     public String toString(){
         return this.name + " is " + this.age + " years old";
